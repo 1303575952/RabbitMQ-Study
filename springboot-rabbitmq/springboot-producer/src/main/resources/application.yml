@@ -1,0 +1,18 @@
+spring:
+  rabbitmq:
+    addresses: 47.106.10.211:5672
+    username: guest
+    password: guest
+    virtual-host: /
+    connection-timeout: 15000s
+  http:
+    encoding:
+      charset: UTF-8
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: NON_NULL
+server:
+  servlet:
+    context-path: /
+    port: 8001
