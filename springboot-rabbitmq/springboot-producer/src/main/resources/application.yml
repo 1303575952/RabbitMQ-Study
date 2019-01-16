@@ -4,15 +4,24 @@ spring:
     username: guest
     password: guest
     virtual-host: /
-    connection-timeout: 15000s
-  http:
-    encoding:
-      charset: UTF-8
-  jackson:
-    date-format: yyyy-MM-dd HH:mm:ss
-    time-zone: GMT+8
-    default-property-inclusion: NON_NULL
+    publisher-confirms: true
+    publisher-returns: true
+    template:
+      mandatory: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/rabbit?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
+    driverClassName: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
 server:
+  port: 8001
   servlet:
     context-path: /
-    port: 8001
+mybatis:
+  type-aliases-package: com.imooc.springbootproducer
+  mapper-locations: classpath:com/imooc/springbootproducer/mapping/*.xml
+logging:
+  level:
+    tk:
+      mybatis: trace

@@ -1,4 +1,4 @@
-package com.sxw.springbootproducer;
+package com.imooc.springbootproducer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
