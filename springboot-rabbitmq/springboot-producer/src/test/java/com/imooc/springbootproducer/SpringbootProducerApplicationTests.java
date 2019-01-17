@@ -19,8 +19,8 @@ public class SpringbootProducerApplicationTests {
     @Test
     public void testSend() throws Exception {
         Order order = new Order();
-        order.setId(2019011623);
-        order.setName("测试订单1");
+        order.setId(2019011721);
+        order.setName("创建测试订单");
         order.setMessageId(System.currentTimeMillis() + "$" + UUID.randomUUID().toString());
         orderSender.send(order);
     }
