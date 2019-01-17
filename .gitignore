@@ -25,3 +25,6 @@ hs_err_pid*
 /springboot-rabbitmq/springboot-producer/.mvn/wrapper
 /springboot-rabbitmq/.idea
 /springboot-rabbitmq/springboot-model/*.iml
+/springboot-rabbitmq/springboot-consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/*.lst
+/springboot-rabbitmq/springboot-model/target/maven-status/maven-compiler-plugin/compile/default-compile/*.lst
+/springboot-rabbitmq/springboot-consumer/target/classes
